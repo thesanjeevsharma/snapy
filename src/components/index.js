@@ -1,4 +1,6 @@
-import WebcamCapture from "./WebcamCapture";
+import Chat from "./Chat";
+import Chats from "./Chats";
 import Preview from "./Preview";
+import WebcamCapture from "./WebcamCapture";
 
-export { WebcamCapture, Preview };
+export { Chat, Chats, Preview, WebcamCapture };

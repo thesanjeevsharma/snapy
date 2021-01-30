@@ -1,0 +1,45 @@
+.Chats__Header {
+   align-items: center;
+   background: var(--color-blue);
+   display: flex;
+   padding: 12px;
+}
+
+.Chats__Avatar {
+   height: 24px!important;
+   width: 24px!important;
+}
+
+.Chats__Search {
+   display: flex;
+   align-items: center;
+   margin: 0 8px;
+}
+
+.Chats__Search > input {
+   background: transparent;
+   border: none;
+   color: var(--color-white);
+   flex: 1;
+   font-size: 12px;
+   outline: none;
+}
+
+.Chats__Posts {
+   background: var(--color-white);
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   box-shadow: 1px -7px 7px -6px rgba(0, 0, 0, 0.44);
+   height: 359px;
+   margin-top: -9px;
+   overflow: scroll;
+
+   /* Scroll Bar */
+   -ms-overflow-style: none; /* IE and Edge */
+   scrollbar-width: none; /* Firefox */
+}
+
+
+.Chats__Posts::-webkit-scrollbar {
+   display: none;
+}

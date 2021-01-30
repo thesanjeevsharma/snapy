@@ -4,6 +4,8 @@
 
 html {
    --color-primary: #fefc01;
+   --color-blue: #059ee0;
+   --color-red: #ed3b55;
    --color-white: #ffffff;
    --color-black: #000000;
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import { WebcamCapture, Preview } from "./components";
+import { Chats, Preview, WebcamCapture } from "./components";
 import "./App.css";
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
         <div className="App__Body">
           <Switch>
             <Route exact path="/preview" component={Preview} />
+            <Route exact path="/chats" component={Chats} />
             <Route exact path="/" component={WebcamCapture} />
           </Switch>
         </div>
