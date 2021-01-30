@@ -36,14 +36,23 @@ const App = () => {
         {!state.user ? (
           <Login />
         ) : (
-          <div className="App__Body">
-            <Switch>
-              <Route exact path="/preview" component={Preview} />
-              <Route exact path="/chats" component={Chats} />
-              <Route exact path="/chats/view" component={ChatView} />
-              <Route path="/" component={WebcamCapture} />
-            </Switch>
-          </div>
+          <>
+            <img
+              alt="Snapy"
+              className="App__Logo"
+              src="https://scx2.b-cdn.net/gfx/news/2017/1-snapchat.jpg"
+            />
+            <div className="App__Body">
+              <div className="App__BodyBackground">
+                <Switch>
+                  <Route exact path="/preview" component={Preview} />
+                  <Route exact path="/chats" component={Chats} />
+                  <Route exact path="/chats/view" component={ChatView} />
+                  <Route path="/" component={WebcamCapture} />
+                </Switch>
+              </div>
+            </div>
+          </>
         )}
       </Router>
     </div>

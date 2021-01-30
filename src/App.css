@@ -6,3 +6,20 @@
    height: 100vh;
    justify-content: center;
 }
+
+.App__Logo {
+   height: 100px;
+   object-fit: contain;
+}
+
+.App__Body {
+   background: url('https://www.pngkey.com/png/full/859-8598072_picture-freeuse-library-silhouette-mobile-at-getdrawings-cell.png') no-repeat center;
+   background-size: contain;
+   height: 400px;
+   width: 250px;
+   padding: 74px;
+}
+
+.App__BodyBackground {
+   background: var(--color-white);
+}
