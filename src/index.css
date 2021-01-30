@@ -8,6 +8,7 @@ html {
    --color-red: #ed3b55;
    --color-white: #ffffff;
    --color-black: #000000;
+   --color-gray: gray;
 }
 
 body {

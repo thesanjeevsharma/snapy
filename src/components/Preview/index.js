@@ -13,6 +13,7 @@ import TextFieldsIcon from "@material-ui/icons/TextFields";
 import TimerIcon from "@material-ui/icons/Timer";
 import { v4 as uuid } from "uuid";
 
+import { selectApp } from "../../features/appSlice";
 import { cameraState, resetCameraImage } from "../../features/cameraSlice";
 import { db, storage } from "../../firebase";
 
@@ -20,6 +21,7 @@ import "./Preview.css";
 
 const Preview = () => {
   const state = useSelector(cameraState);
+  const appState = useSelector(selectApp);
   const dispatch = useDispatch();
   const history = useHistory();
 
@@ -48,7 +50,8 @@ const Preview = () => {
           .then((url) => {
             db.collection("posts").add({
               imageUrl: url,
-              username: "thesanjeevsharma",
+              username: appState.user.username,
+              profilePic: appState.user.profilePic,
               read: false,
               timestamp: firebase.firestore.FieldValue.serverTimestamp(),
             });

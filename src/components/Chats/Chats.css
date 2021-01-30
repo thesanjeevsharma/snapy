@@ -1,3 +1,7 @@
+.Chats {
+   position: relative;
+}
+
 .Chats__Header {
    align-items: center;
    background: var(--color-blue);
@@ -6,6 +10,7 @@
 }
 
 .Chats__Avatar {
+   cursor: pointer;
    height: 24px!important;
    width: 24px!important;
 }
@@ -16,6 +21,11 @@
    margin: 0 8px;
 }
 
+.Chats__SearchIcon {
+   color: var(--color-white);
+   font-size: 14px!important;
+}
+
 .Chats__Search > input {
    background: transparent;
    border: none;
@@ -23,6 +33,11 @@
    flex: 1;
    font-size: 12px;
    outline: none;
+}
+
+.Chats__ChatIcon {
+   color: var(--color-white);
+   font-size: 18px!important;
 }
 
 .Chats__Posts {
@@ -42,4 +57,20 @@
 
 .Chats__Posts::-webkit-scrollbar {
    display: none;
+}
+
+.Chats__CameraButton {
+   background: var(--color-white);
+   border-radius: 200px;
+   bottom: 0;
+   color: var(--color-gray);
+   cursor: pointer;
+   font-size: 40px !important;
+   left: 50%;
+   position: absolute;
+   transform: translate(-50%, -50%);
+}
+
+.Chats__CameraButton:hover {
+   opacity: 0.8;
 }
